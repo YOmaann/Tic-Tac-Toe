@@ -51,7 +51,10 @@ function start() {
   ui.m = el;
   ui.j = Array.from(ui.m);
   for (i = 0; i < el.length; i++) {
-    el[i].addEventListener("touchend", flip);
+    ["click", "touchend"].forEach((e) => {
+      el[i].addEventListener(e, flip);
+    });
+    // el[i].addEventListener("click", flip);
   }
   document.getElementsByClassName("button").classList = "hide";
   document.getElementsByClassName("overlap")[0].classList.add("hide-sl");
