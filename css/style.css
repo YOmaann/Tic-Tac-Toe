@@ -76,7 +76,7 @@ body {
 #grid {
   width: 100%;
   padding: 20px 0px;
-  background: tomato;
+  background: black;
   box-shadow: inset 0px 14px 10px -10px black, inset 0px -14px 10px -10px black;
 }
 .overlap > .button {
